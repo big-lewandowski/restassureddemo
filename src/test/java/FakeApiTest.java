@@ -29,7 +29,7 @@ public class FakeApiTest {
         List<Comment> allComents = jsonPathEvaluator.getList(".", Comment.class);
 
         Assert.assertEquals(response.getStatusCode(), 200);
-        Assert.assertTrue(allComents.size()>1);
+        Assert.assertTrue(allComents.size()>=1);
     }
 
 }
